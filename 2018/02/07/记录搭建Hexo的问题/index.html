@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="记录昨天第一次做hexo失败:  我使用的是虚拟机VMware–ubuntu 16.04 LTS–i386版本  ​第一步是在github建立新的仓库: heatyux.github.io，步骤写的是空的仓库，我因为习惯了直接初始化仓库，建立了.git、md等，这是错误的，这也导致了和后面的步骤冲突了.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记录搭建Hexo的问题">
+<meta property="og:url" content="http://yoursite.com/2018/02/07/记录搭建Hexo的问题/index.html">
+<meta property="og:site_name" content="iyux的博客">
+<meta property="og:description" content="记录昨天第一次做hexo失败:  我使用的是虚拟机VMware–ubuntu 16.04 LTS–i386版本  ​第一步是在github建立新的仓库: heatyux.github.io，步骤写的是空的仓库，我因为习惯了直接初始化仓库，建立了.git、md等，这是错误的，这也导致了和后面的步骤冲突了.">
+<meta property="og:image" content="http://yoursite.com/2018/02/07/记录搭建Hexo的问题/imgs/npm-hexo-err.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/07/记录搭建Hexo的问题/imgs/second-create-hexo.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/07/记录搭建Hexo的问题/imgs/second-hexo-two.png">
+<meta property="og:updated_time" content="2018-03-19T08:15:56.096Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="记录搭建Hexo的问题">
+<meta name="twitter:description" content="记录昨天第一次做hexo失败:  我使用的是虚拟机VMware–ubuntu 16.04 LTS–i386版本  ​第一步是在github建立新的仓库: heatyux.github.io，步骤写的是空的仓库，我因为习惯了直接初始化仓库，建立了.git、md等，这是错误的，这也导致了和后面的步骤冲突了.">
+<meta name="twitter:image" content="http://yoursite.com/2018/02/07/记录搭建Hexo的问题/imgs/npm-hexo-err.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/02/07/记录搭建Hexo的问题/"/>
+
+
+
+
+
+  <title>记录搭建Hexo的问题 | iyux的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">iyux的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/07/记录搭建Hexo的问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yux">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iyux的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">记录搭建Hexo的问题</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-07T13:09:51+08:00">
+                2018-02-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>记录昨天第一次做hexo失败:</p>
+<blockquote>
+<p>我使用的是虚拟机VMware–ubuntu 16.04 LTS–i386版本</p>
+</blockquote>
+<p>​第一步是在github建立新的仓库: heatyux.github.io，步骤写的是<strong>空的仓库</strong>，我因为习惯了直接初始化仓库，建立了.git、md等，这是错误的，这也导致了和后面的步骤冲突了.<a id="more"></a></p>
+<p>​接着是要使用npm包安装hexo手脚架，因为我这个ubuntu系统并没有nodejs，所以是先要安装nodejs。因为要使用命令行安装，目前我对于cl掌握不够，只能google“ubuntu 16.04 安装 nodejs”，找到了[<a href="https://www.jianshu.com/p/2b24cd430a7d" target="_blank" rel="noopener">Ubuntu16.04安装最新版nodejs</a>]，这个步骤很详细，我之前更换了清华大学软件源，所以只需要前面3个步骤就安装好了nodejs。在普通用户下似乎并不能安装这个npm包：<img src="/2018/02/07/记录搭建Hexo的问题/./imgs/npm-hexo-err.png" alt="npm-hexo-err"></p>
+<p>遇到错误怎么办？直接放弃了。当然不行，有困难找google啊，所以又继续在google寻求答案，终于找到了在命令前面加<code>sudo</code> 也就是让管理群组来安装即可:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>​继续执行下面的3个步骤，似乎并没有error提示出来，一切都是那么的自然。当然了，问题总是伴随着成功必不可少的一步。回到第一步的步骤，我说了犯了一个错误，就是这个仓库并不是一个空仓库，我已经初始化了这个仓库，里面已经有了一些文件。执行<code>hexo new 开博大吉</code> 就出现问题了，当时我是直接忽略了，因为我没有看到有err的字眼，导致了并没有成功生成<code>开博大吉.md</code> 文件，也没有<code>INFO</code>提示这里我又犯了一个错误，就是粗心，这里有图例都没有好好确认是否一致。</p>
+<p>​因为没有成功生成<code>*.md</code>文件，而且又初始化了仓库的<code>README.md</code>文件，当时我以为是要编辑仓库的<code>md</code>文件，所以直接是<code>gedit README.md</code>，随便编辑了点内容。当然了，这些当时我都以为是正常的进行。</p>
+<p>​到了编辑网站设置，我又因为粗心吃了大亏，<code>gedit _config.yml</code>到是没什么问题，但是在步骤iv中，原文是<strong>在最后一行后面新增一行，左边与 type 平齐，加上一行 <code>repo: 仓库地址</code></strong>，我因没有好好理解清楚，无以为是<code>在最后一行添加一行，与type平齐，加上repo:仓库地址</code> ，所以 正确的操作应该是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git </span><br><span class="line">  repo: git@github.com:heatyux/heatyux.github.io.git</span><br></pre></td></tr></table></figure>
+<p>我编辑成了:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git repo: git@github.com:heatyux/heatyux.github.io.git</span><br></pre></td></tr></table></figure>
+<p>​到了最后两步都是有报错提示的，我有些预感是此次做hexo博客是失败的，果不其然，虽然最后，我在仓库里面看到Github Page自动生成了地址，也能打开，但并不是正确的Hexo博客，只不过是我的readme文件罢了</p>
+<hr>
+<p>​至此第一次创建Hexo博客已失败告终，当然对于我而言失败是件好事，因为失败了，才能加深对其步骤的理解，知道哪些地方出错是要避免的。重新创建一次Hexo博客，删除原来的heatyux.github.io仓库，在ubuntu的hexo-git目录删除，重新执行:</p>
+<ul>
+<li>新建仓库<code>heat-yux.github.io</code>，点击<code>Create repository</code>后放置，不做任何操作</li>
+<li>在ubuntu里新建Document目录，进入</li>
+<li>执行<code>sudo npm install -g hexo-cli</code>，别忘了在普通用户中加上<code>sudo</code></li>
+<li>继续<code>hexo init myBlog</code> 创建并初始化myBlog目录</li>
+<li><code>npm i</code> 安装模块</li>
+<li>前面已创建空仓库，执行<code>hexo new 开博大吉</code>，生成<code>开博大吉.md</code>文件</li>
+<li>编辑 <code>gedit 开博大吉.md</code>，内容编辑”这是我第二次做hexo博客”</li>
+<li>编辑<code>gedit _config.yml</code>, 修改title、author、type</li>
+<li>在<code>_config.yml</code>中，在<code>type</code>后面<strong>回车</strong>，新增一行为<code>repo地址</code></li>
+<li>执行<code>npm install hexo-deployer-git --save</code></li>
+<li>执行<code>hexo deploy</code></li>
+<li>到浏览器新建<code>heat-yux.github.io</code> 仓库中，刷新到Github Page中生成了<a href="https://heatyux.github.io/" target="_blank" rel="noopener">https://heatyux.github.io/</a></li>
+<li>进入访问成功，是正确的Hexo博客页面</li>
+</ul>
+<p><img src="/2018/02/07/记录搭建Hexo的问题/./imgs/second-create-hexo.png" alt="second-create-hexo"></p>
+<p>第二篇博客根据文章提示，加上新的命令<code>hexo generate</code>也成功创建了博客:</p>
+<p><img src="/2018/02/07/记录搭建Hexo的问题/./imgs/second-hexo-two.png" alt="second-hexo-two"></p>
+<p>​总结：此次Hexo之行中，我真的觉得看别人操作和自己操作是完全不一样的，首先别人的使用环境就跟你的不一样，所以当你在执行命令的时候，会遇到各种各样的错误，但别担心，这些问题已经有前辈领教了，你只要能搜索关键词就能找到解决的方法，这也是一种关键的技能，不是吗？还有一定要尽可能多次尝试，不要被问题所击败，要能客观面对错误，不是自己的无能的答案。希望你能够保持耐心和对问题的不急躁，一步一步来，一步一步重新来，面对的问题多了，一步步解决，自然也就会慢慢减少，到时品尝了胜利的果实就觉得之前的问题都不是问题，而且这种感觉真的很好，想到被问题困扰的自己和现在的自己，真的很奇妙呢。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/07/第二篇博客/" rel="next" title="第二篇博客">
+                <i class="fa fa-chevron-left"></i> 第二篇博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/07/记录搭建Hexo的问题修订/" rel="prev" title="记录搭建Hexo的问题修订">
+                记录搭建Hexo的问题修订 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">yux</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">Artikel</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yux</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
