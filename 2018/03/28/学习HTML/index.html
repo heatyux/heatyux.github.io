@@ -86,12 +86,12 @@
 <meta property="og:site_name" content="Yuxu&#39;s Blog">
 <meta property="og:description" content="这篇文章是由以前学习HTML记录的小知识整理而来。">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2018/03/28/学习HTML/img/html-ftp.png">
-<meta property="og:updated_time" content="2018-03-28T03:08:40.764Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/28/学习HTML/html-ftp.png">
+<meta property="og:updated_time" content="2018-03-28T03:14:02.903Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习HTML">
 <meta name="twitter:description" content="这篇文章是由以前学习HTML记录的小知识整理而来。">
-<meta name="twitter:image" content="http://yoursite.com/2018/03/28/学习HTML/img/html-ftp.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/28/学习HTML/html-ftp.png">
 
 
 
@@ -315,7 +315,7 @@
 <h2 id="空标签"><a href="#空标签" class="headerlink" title="空标签"></a>空标签</h2><p>空标签，是html中的一个标签，指在标签中不存在内容或者元素，且空标签自身就是闭合的，不能再添加一个闭合标签。如<code>&lt;br&gt;</code>、<code>&lt;img&gt;</code>、<code>&lt;input&gt;</code>等。</p>
 <h2 id="可替换标签"><a href="#可替换标签" class="headerlink" title="可替换标签"></a>可替换标签</h2><p>可替换标签，为html中使用的对象资源决定，不能由css来决定使用的样式、资源等，如img、input、video标签等等。</p>
 <h2 id="本地测试HTML"><a href="#本地测试HTML" class="headerlink" title="本地测试HTML"></a>本地测试HTML</h2><p>在本地中打开的HTML文件，在浏览器的地址栏中可以看到使用的是一种<strong>FTP</strong>协议</p>
-<p><img src="/2018/03/28/学习HTML/img/html-ftp.png" alt="html-ftp"></p>
+<p><img src="/2018/03/28/学习HTML/html-ftp.png" alt="html-ftp"></p>
 <p>使用这种协议有个缺点是，当默认使用这个协议时，若外部链接没有声明使用何种协议时，那么根据浏览器的渲染，也会默认将此协议当成FTP协议，如不加<strong>HTTP</strong>协议的链接<code>//qq.com</code>，没有表示当前链接是<strong>HTTP</strong>协议，那么此<code>href</code>的链接表示的是<strong>FTP</strong>协议，那么所带来的后果就是这个文件并不存在(FTP协议时文件路径协议)。</p>
   <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"//qq.com"</span>&gt;</span>qq<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line">因为是在本地电脑用浏览器打开的，此时的协议是ftp协议，所以href地址会被识别成在本地有一个名为'qq.com'的文件需要跳转(当然这个文件是不存在的)</span><br></pre></td></tr></table></figure>
 <p>所以是不建议使用ftp协议，用下面的方式就可以改变这种情况：</p>
