@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="学习css不要问太多的技术细节，先用后学才是打开CSS的正确方式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习CSS一">
+<meta property="og:url" content="http://yoursite.com/2018/03/28/学习CSS一/index.html">
+<meta property="og:site_name" content="Yuxu&#39;s Blog">
+<meta property="og:description" content="学习css不要问太多的技术细节，先用后学才是打开CSS的正确方式">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-03-28T11:59:08.603Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学习CSS一">
+<meta name="twitter:description" content="学习css不要问太多的技术细节，先用后学才是打开CSS的正确方式">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/03/28/学习CSS一/"/>
+
+
+
+
+
+  <title>学习CSS一 | Yuxu's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Yuxu's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/28/学习CSS一/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yux">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yuxu's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">学习CSS一</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-28T19:57:17+08:00">
+                2018-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>学习css不要问太多的技术细节，先用后学才是打开CSS的正确方式<a id="more"></a></p>
+<h2 id="引入CSS"><a href="#引入CSS" class="headerlink" title="引入CSS"></a>引入CSS</h2><p>引入CSS的4种方式:</p>
+<ul>
+<li>内联<code>style</code>属性</li>
+<li><code>style</code>标签</li>
+<li>外部文件<code>link</code></li>
+<li><code>importent</code></li>
+</ul>
+<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><p><strong>直接后代选择器</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">nav</span> &gt; <span class="selector-tag">ul</span> &gt; <span class="selector-tag">li</span></span><br></pre></td></tr></table></figure>
+<p><strong>后代选择器</strong></p>
+<p><strong>元素选择器</strong></p>
+<p><strong>类选择器</strong></p>
+<p><strong>ID选择器</strong></p>
+<p><strong>属性选择器</strong>—-<code>元素[属性]</code></p>
+<ul>
+<li>简单属性选择器—a[href]（可有多个属性）</li>
+<li>具体属性值选择器—a[href=”www.xuyu.com”]</li>
+<li><p>部分属性值选择器—p[class~=”warning”]（只选取一个或部分属性值）</p>
+<blockquote>
+<p>部分属性值选择器和类选择器是等价的，例如p.error == p[class=”error”]</p>
+</blockquote>
+</li>
+<li><p>子串匹配属性选择器</p>
+<ul>
+<li>子串开头匹配选择器—foo^=”bar”（选取foo属性值开头为bar的所有元素）</li>
+<li>子串末尾匹配选择器—foo$=”bar”（选取foo属性值末尾为bar的所有元素）</li>
+<li>子串模糊匹配选择器—foo*=”bar”（选取foo属性值中有bar的所有元素）</li>
+</ul>
+</li>
+</ul>
+<h2 id="简写属性"><a href="#简写属性" class="headerlink" title="简写属性"></a>简写属性</h2><p>在CSS简写属性中，一般多个关键字之间是用空格隔离的，有个特殊的属性的关键字是用斜线的<code>font: 2.0em/1.5</code>(这里表示字体的大小和行高)。</p>
+<h2 id="默认浏览器属性值"><a href="#默认浏览器属性值" class="headerlink" title="默认浏览器属性值"></a>默认浏览器属性值</h2><p>浏览器默认的<code>font-size</code> = 16px</p>
+<p>不同操作系统所渲染的颜色会不同，而且不同的字体所展现相同的颜色也会稍有不同</p>
+<h2 id="继承属性"><a href="#继承属性" class="headerlink" title="继承属性"></a>继承属性</h2><ul>
+<li>color</li>
+<li>font-size</li>
+<li>font-family</li>
+<li>text-align</li>
+</ul>
+<p>选择壁纸的好地方: google wall haven</p>
+<h2 id="调试方法"><a href="#调试方法" class="headerlink" title="调试方法"></a>调试方法</h2><p>调试大法: 使用<code>border</code>属性</p>
+<h2 id="文档流"><a href="#文档流" class="headerlink" title="文档流"></a>文档流</h2><p>文档流：文档内元素的流动方向。</p>
+<p>脱离文档流影响的是父元素的高度，如子元素使用<code>float</code></p>
+<h2 id="内联和块级"><a href="#内联和块级" class="headerlink" title="内联和块级"></a>内联和块级</h2><p><strong>内联元素</strong>从左往右移动，流动到达视窗边缘时，剩余的部分继续在下一行流动，有种特别的现象就是当加了一个<code>border</code>后，一个<code>span</code>到达边缘时会在前面先截一半，后一半继续显示在下一行中，但是此时的border仍然只有一个，但是还有个很特别的现象，就是当一个英文单词是不会截断的，就是说这个单词是一体的，想要截断使用属性<code>word-break</code>。</p>
+<p>内联元素不支持设置宽高。</p>
+<p><strong>块级元素</strong>是从上往下流动，每个块级元素占一行，即使规定了很小的宽度，比如10px，还是会占一行。</p>
+<h2 id="宽度和高度"><a href="#宽度和高度" class="headerlink" title="宽度和高度"></a>宽度和高度</h2><p><code>max-width</code>: 表示最大宽度，一旦小于这个宽度就变成自适应</p>
+<p><code>height: 100%</code>是一个无效值</p>
+<p>给<code>div</code>加个<code>line-height</code>相当于一个高度。</p>
+<p>一个元素的高度是由内容决定的，例如，一个空的<code>div</code>的高度为0。</p>
+<p><code>div</code>高度由其内部文档流元素的<strong>高度总和</strong>决定。</p>
+<p>通常来说不要轻易用<code>width</code>、<code>height</code>，而是用<code>padding</code>来转换，这个带来的巨大好处之一就是里面的文字可以轻易的添加减而不影响外部对于文字的间隙，一旦定死了宽高，编辑了里面的文字，添加了文字，那么超过此事的宽度的其余文字就不会显示。用<code>padding</code>有个小问题，就是不同的机器显示的高度会有问题，所以一般在加个<code>line-height</code>等于这个高度即可。</p>
+<p>盒模型会上下<code>margin</code>合并，但是内联和块级的并不会合并。</p>
+<p>当<code>div</code>使用了<code>position:fixed</code>时，使用了浮动的子<code>div</code>就会收缩在一起，这个<code>div</code>是宽度为100%， 但是第二个子<code>div</code>的”其他”有点到边缘了，这时在这两个子前面再加一个父元素<code>div</code>加一个<code>padding</code>即可解决。</p>
+<h2 id="行高"><a href="#行高" class="headerlink" title="行高"></a>行高</h2><p>文字的对齐是以<strong>基线</strong>为对准的，文字与文字之间有一个行高（上一个行线-四线谱-下一个行线）</p>
+<p>在<code>span</code>的<code>font-size：100px</code>指的是最高的字的部分到最低的字的部分的高度就是100px，但是加了<code>border</code>发现为140px，这就是上面说的一个建议行高，表示这个行高是文字大小的1.4倍，不同的字体类型的行高也不一样</p>
+<p>其实<code>line-height</code>定义好了是可以确定<code>span</code>的高度的，但是<code>line-height</code>的大小比<code>font-size</code>的要小的话，那么此时的高度一定是大于<code>line-height</code>的</p>
+<p>当<code>div</code>的高度是不可控的时候，强行使用<code>height</code>定死，但是一定不要这样用（不要用<code>height</code>），这是一个bug很多的写法</p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>让图片居中: <code>background-position: center center</code></p>
+<p>让图片自适应: <code>background-size: cover</code></p>
+<p>想让图片浮上去，那么就要让前一个<code>div</code>脱离<code>body</code>的文档流就行</p>
+<h2 id="图标字体"><a href="#图标字体" class="headerlink" title="图标字体"></a>图标字体</h2><p>使用图标字体: iconfont.cn</p>
+<h2 id="VScode编写html快捷方式"><a href="#VScode编写html快捷方式" class="headerlink" title="VScode编写html快捷方式"></a>VScode编写html快捷方式</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div&#123;文字$&#125;*10</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/28/学习HTML/" rel="next" title="学习HTML">
+                <i class="fa fa-chevron-left"></i> 学习HTML
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/28/学习CSS二/" rel="prev" title="学习CSS二">
+                学习CSS二 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">yux</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#引入CSS"><span class="nav-number">1.</span> <span class="nav-text">引入CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择器"><span class="nav-number">2.</span> <span class="nav-text">选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简写属性"><span class="nav-number">3.</span> <span class="nav-text">简写属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#默认浏览器属性值"><span class="nav-number">4.</span> <span class="nav-text">默认浏览器属性值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#继承属性"><span class="nav-number">5.</span> <span class="nav-text">继承属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调试方法"><span class="nav-number">6.</span> <span class="nav-text">调试方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文档流"><span class="nav-number">7.</span> <span class="nav-text">文档流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内联和块级"><span class="nav-number">8.</span> <span class="nav-text">内联和块级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宽度和高度"><span class="nav-number">9.</span> <span class="nav-text">宽度和高度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#行高"><span class="nav-number">10.</span> <span class="nav-text">行高</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片"><span class="nav-number">11.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图标字体"><span class="nav-number">12.</span> <span class="nav-text">图标字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VScode编写html快捷方式"><span class="nav-number">13.</span> <span class="nav-text">VScode编写html快捷方式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yux</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

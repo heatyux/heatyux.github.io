@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="学习CSS永无止境">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习CSS二">
+<meta property="og:url" content="http://yoursite.com/2018/03/28/学习CSS二/index.html">
+<meta property="og:site_name" content="Yuxu&#39;s Blog">
+<meta property="og:description" content="学习CSS永无止境">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/2018/03/28/学习CSS二/Snipaste_2018-03-14_14-52-47.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/28/学习CSS二/Snipaste_2018-03-14_15-03-35.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/28/学习CSS二/Snipaste_2018-03-14_15-01-17.png">
+<meta property="og:updated_time" content="2018-03-28T12:00:17.605Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="学习CSS二">
+<meta name="twitter:description" content="学习CSS永无止境">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/28/学习CSS二/Snipaste_2018-03-14_14-52-47.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/03/28/学习CSS二/"/>
+
+
+
+
+
+  <title>学习CSS二 | Yuxu's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Yuxu's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/28/学习CSS二/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yux">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yuxu's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">学习CSS二</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-28T19:58:23+08:00">
+                2018-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>学习CSS永无止境<a id="more"></a></p>
+<h2 id="导航下划线"><a href="#导航下划线" class="headerlink" title="导航下划线"></a>导航下划线</h2><p>使用<code>float: left</code>将每个<code>li</code>项浮动，设置<code>margin-left</code>和<code>margin-right</code>为不同项之间的间距，然后先设置<code>li</code>项的下划线<code>borger-bottom: 1px solid transparent</code>为透明色，就是表示先占一个位置，但是肉眼是看不出来的，然后在<code>a</code>项中使用伪类<code>:hover</code>再使用<code>borger-bottom: 1px solid red</code>将原先站位的透明色的下边框显示出来，这是一个鸡贼但是有效的方法。</p>
+<p>在<code>li</code>中的<code>a</code>高度比<code>li</code>的要高，解决这个方法是设置<code>a</code>的css<code>display: block</code>即可。</p>
+<p>在做导航条的时候，遇到使用<code>:hover</code>的情况，一般来说使用了<code>:hover</code>要在后面加一条下划线，这时不要用<code>text-decoration</code>这个属性，因为这个属性不能设置颜色和宽度，所以我们使用<code>border-bottom</code>这个属性，这是一个<code>a</code>标签，但是它是内联元素，就表示这个标签的范围不是扩充整个<code>li</code>标签的(<code>li</code>标签是块级元素)，所以要设置这个<code>a</code>的<code>display: block</code>。</p>
+<p>但是这又引发了一个问题，就是前面在<code>a:hover</code>的时候会显示<code>border</code>，但是没有<code>hover</code>的时候，此时<code>a</code>的宽度是没有合算这个<code>border</code>的，所以当<code>:hover</code>的时候，宽度会加上<code>border-bottom</code>的宽度，从肉眼上看明显感到了当<code>:hover</code>的时候下面的内容也跟着向下移动了一般，那为了解决这个问题，我们是在<code>a</code>标签中也提前加上这个<code>border-bottom</code>，只不过是把颜色改为<code>transparent</code>，从肉眼上看这是没有<code>border</code>的，但是因为<code>a</code>本身已经添加了<code>border-bottom</code>，再<code>:hover</code>的时候只是将颜色显示出来，从而保证了没有<code>:hover</code>和<code>:hover</code>的元素宽度是一致的，不会感到内容向下移动的视觉出现。</p>
+<h2 id="脱离文档流"><a href="#脱离文档流" class="headerlink" title="脱离文档流"></a>脱离文档流</h2><p>当一个<code>div</code>使用了<code>position：fixed</code>后，其子元素使用了<code>float:left</code>和<code>float：right</code>的会回缩在一起，解决这个问题的办法是使用<code>width:100%</code>就能解决到，但是又出现一个问题就是里面的子<code>div</code>感觉宽度正在变小一样，可以看出子<code>div</code>的宽度比以前要小，那么就要再父元素后面加一个<code>div</code>包裹这两个子<code>div</code>，再在这个<code>div</code>补上剩余的<code>padding</code>即可。</p>
+<p>当下元素使用了<code>float</code>，父元素就要使用<code>clearfix</code>类，防止塌陷。</p>
+<p>只有<code>display: block</code>的元素的<code>margin</code>上下会发生塌陷（只留下大的一方)其他情况(只要有一方是<code>inline-block</code>)上下的<code>margin</code>都会合计计算。</p>
+<h2 id="后代选择器和邻居选择器"><a href="#后代选择器和邻居选择器" class="headerlink" title="后代选择器和邻居选择器"></a>后代选择器和邻居选择器</h2><p>请注意<code>footer.mdia</code> 和<code>footer  .media</code>的区别<br><code>footer.mdia</code>是在一个标签上，而<code>footer .media</code>是一个父子标签</p>
+<p><code>footer.mdia</code>:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">footer</span> <span class="attr">class</span>=<span class="string">"mdia"</span>&gt;</span><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><code>footer .mdia</code>:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"mdia"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="divs、spans宽度和高度"><a href="#divs、spans宽度和高度" class="headerlink" title="divs、spans宽度和高度"></a>divs、spans宽度和高度</h2><p>divs的高度取决于内容的实际高度，就是说包裹在其里面的元素，不过我现在有个spans声明了<code>margin</code>和<code>padding</code>的宽度，但是divs的高度还是内容的高度，是因为<code>margin</code>和<code>padding</code>是宽度的关系吗？如图所示:</p>
+<p><img src="/2018/03/28/学习CSS二/Snipaste_2018-03-14_14-52-47.png" alt="Snipaste_2018-03-14_14-52-47"></p>
+<p>其中有红色边框的是divs，灰色边框的是spans，可以看到spans的<code>padding</code>延伸出来，但是divs的高度还是内容的高度。</p>
+<p>为此，我在开发工具里面查看这个spans的高度发现是auto的:</p>
+<p><img src="/2018/03/28/学习CSS二/Snipaste_2018-03-14_15-03-35.png" alt="Snipaste_2018-03-14_15-03-35"></p>
+<p>而且这个auto修改了其他值(比如50px)也不起任何作用，那么这就表明了inline元素是不具有宽度和高度的，之所以添加了边框感觉有其宽度和高度，但那是因为添加<code>padding</code>而已</p>
+<p>但是如果将spans通过css转变为divs的话，divs的高度有占满了整个子元素的高度</p>
+<p><img src="/2018/03/28/学习CSS二/Snipaste_2018-03-14_15-01-17.png" alt="Snipaste_2018-03-14_15-01-17"></p>
+<p>所以我们可以得知，divs下只有spans，且divs没有声明高度下，默认高度为spans的内容高度。那有什么取决于spans内容的高度呢？有两个: <code>font-size</code>和<code>line-height</code>。当<code>font-size</code>值越大时，内容的宽高自然在增大，此时的divs的高度也在增加；<code>line-height</code>可以粗暴的理解为spans的高度(但并不是，只是理解)，<code>ine-hieght</code>增大时，divs的高度也在增加。且当spans同时有这两个声明时，divs的高度取决于<code>line-height</code>的值。</p>
+<p>总结:</p>
+<ul>
+<li><p><strong>inline元素不具有宽度和高度</strong></p>
+</li>
+<li><p><strong>divs里面有spans元素，那么只计算这个元素的内容的高度</strong></p>
+</li>
+<li><p><strong>inline元素有font-size和line-height属性会影响高度</strong></p>
+</li>
+<li><p><strong>存在上述两个属性时，divs的高度优先取决于line-height</strong></p>
+</li>
+</ul>
+<h2 id="边框盒子和内容盒子"><a href="#边框盒子和内容盒子" class="headerlink" title="边框盒子和内容盒子"></a>边框盒子和内容盒子</h2><p><code>box-sizing: border-box</code>就是说指定了<code>width</code>后，总宽度就是<code>width</code>，包括在了<code>margin</code>和<code>paddin</code>g的宽度一起的，好处是不用计算宽度，就是<code>content-box</code>的宽度会变小</p>
+<h2 id="选择子标签"><a href="#选择子标签" class="headerlink" title="选择子标签"></a>选择子标签</h2><p><code>:nth-child(odd/even)</code></p>
+<h2 id="伪类和伪元素"><a href="#伪类和伪元素" class="headerlink" title="伪类和伪元素"></a>伪类和伪元素</h2><p><code>:xxx</code> 伪类</p>
+<p><code>::xxx</code>伪元素</p>
+<p><code>margin: 0 auto</code> 在没有宽度的情况下是没用的</p>
+<h2 id="hack"><a href="#hack" class="headerlink" title="hack"></a>hack</h2><p>使用了<code>display: inline-block</code>;会出bug，所以通常情况下下面应该接着使用<code>vertical-align:top</code>解决bug</p>
+<p>错的事情多做几遍就知道为什么错了从而避免这个错</p>
+<p>meta标签的charset=utf-8可不写，取决于后台能否自己指定这个charset</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/28/学习CSS一/" rel="next" title="学习CSS一">
+                <i class="fa fa-chevron-left"></i> 学习CSS一
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">yux</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#导航下划线"><span class="nav-number">1.</span> <span class="nav-text">导航下划线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#脱离文档流"><span class="nav-number">2.</span> <span class="nav-text">脱离文档流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后代选择器和邻居选择器"><span class="nav-number">3.</span> <span class="nav-text">后代选择器和邻居选择器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#divs、spans宽度和高度"><span class="nav-number">4.</span> <span class="nav-text">divs、spans宽度和高度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#边框盒子和内容盒子"><span class="nav-number">5.</span> <span class="nav-text">边框盒子和内容盒子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择子标签"><span class="nav-number">6.</span> <span class="nav-text">选择子标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伪类和伪元素"><span class="nav-number">7.</span> <span class="nav-text">伪类和伪元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hack"><span class="nav-number">8.</span> <span class="nav-text">hack</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yux</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
